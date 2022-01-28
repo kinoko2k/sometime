@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ja">
+<head>
+		<meta charset="UTF-8">
+		<meta name="robots" content="noindex,nofollow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="https://media.discordapp.net/attachments/878561042169462814/888406189367525386/65443692_1.png">
+		<title>Kinoko's Sampler</title>
+<script src="../common/js/jquery-1.11.0.min.js"></script>
+<script>
+function soundbell(n)
+{
+  // 対象となるID名
+  var id = 'sound-'+n ;
+  // 初回以外だったら音声ファイルを巻き戻す
+  if( typeof( document.getElementById( id ).currentTime ) != 'undefined' )
+  {
+    document.getElementById( id ).currentTime = 0;
+  }
+  // [ID:sound-file]の音声ファイルを再生[play()]する
+  document.getElementById( id ).play() ;
+}
+
+</script>
+
+<style>
+body{
+margin:20px;
+text-align: center;
+background-color:#11AA78;
+}
+h1{
+	font-weight:normal;
+	font-size:20px;
+	color:#fff;
+}
+  ul {
+    display: flex;
+  }
+.wrap{
+	max-width: 375px;
+	margin:auto;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-flat {
+  overflow: hidden;
+
+  padding: 1.5rem 6rem;
+
+  color: #fff;
+  border-radius: 0;
+  background: #000;
+}
+
+a.btn-flat span {
+  position: relative;
+}
+
+a.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 150%;
+  height: 500%;
+
+  content: "";
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+
+  background: #00b7ee;
+}
+
+a.btn-flat:hover:before {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+button:active {
+ transform: scale(0.97);
+}
+
+#CDT {
+width: 100%;
+text-align: center;
+font-size: 49px;
+font-weight: bold;
+color: #ffffff;
+font-family: 'Noto Sans JP', sans-serif;}
+#CDT01 {
+width: 100%;
+text-align: center;
+font-size: 49px;
+font-weight: bold;
+color: #ffffff;
+font-family: 'Noto Sans JP', sans-serif;
+}
+
+.ttl {
+color: #ffffff;
+font-size: 28px;
+font-weight: 600;
+text-align: center;
+margin: 0;
+line-height: 1.5;
+}
+
+.timer {
+background: #d00000;
+margin: 5px auto;
+padding: 5px;
+}
+
+
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1170681-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1170681-2');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-1014165100755380",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+<body>
+
+<h1>Kinoko Sampler</h1>
+<p>再生</p>
+
+
+
+<body id="top">
+<audio id="sound-1" preload="auto">
+    <source src="sounds/0.mp3" type="audio/mp3">
+    <a href="#" class="btn-circle-border-simple">BUTTON</a>
+</audio>
+
+<audio id="sound-2" preload="auto">
+    <source src="sounds/1.mp3" type="audio/mp3">
+</audio>
+
+<audio id="sound-3" preload="auto">
+    <source src="sounds/2.mp3" type="audio/mp3">
+</audio>
+
+<audio id="sound-4" preload="auto">
+    <source src="sounds/4.mp3" type="audio/mp3">
+</audio>
+
+<audio id="sound-5" preload="auto">
+  <source src="sounds/5.mp3" type="audio/mp3">
+</audio>
+
+<audio id="sound-6" preload="auto">
+  <source src="sounds/6.mp3" type="audio/mp3">
+</audio>
+
+<audio id="sound-7" preload="auto">
+  <source src="sounds/7.mp3" type="audio/mp3">
+</audio>
+
+<audio id="sound-8" preload="auto">
+  <source src="sounds/8.mp3" type="audio/mp3">
+</audio>
+
+<audio id="sound-9" preload="auto">
+  <source src="sounds/9.mp3" type="audio/mp3">
+</audio>
+
+<audio id="sound-10" preload="auto">
+  <source src="sounds/10.mp3" type="audio/mp3">
+</audio>
+
+<div class="wrap">
+<h1>sampler</h1>
+<ul>
+<div id="btn01"><p>いなずま</p></div>
+
+<li><div id="btn01"><img src="images/button-ss.png" onclick="soundbell(1)" alt="click"></div></li>
+<div id="btn02"><p>血しぶき</p></div>
+
+<li><div id="btn02"><img src="images/button-ss.png" onclick="soundbell(2)" alt="click"></div></li>
+</ul>
+
+<ul>
+<div id="btn03"><p>剣で切る音</p></div>
+<li><div id="btn03"><img src="images/button-ss.png" onclick="soundbell(3)" alt="click"></div></li>
+
+<div id="btn04"><p>終わりの締め</p></div>
+<li><div id="btn04"><img src="images/button-ss.png" onclick="soundbell(4)" alt="click"></div></li>
+</ul>
+
+<ul>
+<div id="btn05"><p>ショックを受ける</p></div>
+<li><div id="btn05"><img src="images/button-ss.png" onclick="soundbell(5)" alt="click"></div></li>
+
+<div id="btn06"><p>大爆発</p></div>
+<li><div id="btn06"><img src="images/button-ss.png" onclick="soundbell(6)" alt="click"></div></li>
+</ul>
+
+<div id="btn03"><p>Ω＼ζ°)ﾁｰﾝ</p></div>
+<div id="btn03"><img src="images/button-ss.png" onclick="soundbell(7)" alt="click"></div>
+</div>
+
+<div id="btn07"><p>学校のチャイム</p></div>
+<div id="btn07"><img src="images/button-ss.png" onclick="soundbell(8)" alt="click"></div>
+</div>
+
+<div id="btn08"><p>サイレン</p></div>
+<div id="btn08"><img src="images/button-ss.png" onclick="soundbell(9)" alt="click"></div>
+</div>
+
+<div id="btn09"><p>骨折</p></div>
+<div id="btn09"><img src="images/button-ss.png" onclick="soundbell(10)" alt="click"></div>
+
+<div>
+<section class="timer">
+名古屋市立中学校卒業式まで
+<div id="CDT"></div>
+</section>
+</div>
+<script src="style.js"></script>
+
+<a href="https://otologic.jp/" class="btn btn-flat"><span>音楽のサイト</span></a>
+
+</body>
+</html>

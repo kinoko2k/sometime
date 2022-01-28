@@ -1,2 +1,6 @@
-# graduationtime
-Shows the time until the graduation ceremony of a junior high school in Nagoya
+# sampler
+学校で使用するつもり
+
+# 効果音サイト
+- https://dova-s.jp/
+- https://otologic.jp/
