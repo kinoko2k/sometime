@@ -36,18 +36,14 @@ function CountdownTimer(elm, tl, mes) {
     }
     }
     function CDT() {
-    var tl = new Date('2022/2/22 12:00:00');// ここで日付を指定
+    var tl = new Date('2022/3/3 12:00:00');// ここで日付を指定
     var timer = new CountdownTimer('CDT', tl, '🎉ご卒業おめでとうございます🎉');
     timer.countDown();
     }
-    function CDM() {
-        var tl = new Date('2022/3/3 12:00:00');// ここで日付を指定
-        var timer = new CountdownTimer('CDT', tl, '🎉ご卒業おめでとうございます🎉');
-        timer.countDown();
-    }
+    
     
     function CDT01() {
-    var tl = new Date('2022/2/22 12:00:00');// ここで日付を指定
+    var tl = new Date('2022/3/3 12:00:00');// ここで日付を指定
     var timer = new CountdownTimer('CDT01', tl, '🎉ご卒業おめでとうございます🎉');
     timer.countDown();
     }
@@ -55,14 +51,3 @@ function CountdownTimer(elm, tl, mes) {
     CDT();
     CDT01();
     }
-
-    function CDT02() {
-    var tl = new Date('2022/3/3 12:00:00');// ここで日付を指定
-    var timer = new CountdownTimer('CDT02', tl, '🎉ご卒業おめでとうございます🎉');
-    timer.countDown();
-    }
-    window.onload = function () {
-    CDM();
-    CDT02();
-    }
-
